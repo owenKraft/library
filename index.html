@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1> My library &#x1F4DA;</h1>
+        <form id="form-inputs" onsubmit="return false">
+            <div class="form-field">
+                <input type="text" name="title" id="title" placeholder="Title" required>
+            </div>
+            <div class="form-field">
+                <input type="text" name="author" id="author" placeholder="Author" required>
+            </div>
+            <div class="form-field">
+                <label for="pages"># of pages </label>
+                <input type="number" name="pages" id="pages" required>
+            </div>
+            <div class="form-field">
+                <label for="status">I've already read this book </label>
+                <input type="checkbox" name="status" id="initialStatus">
+            </div>
+            <input type="submit" id="addBook" value="add">
+        </form>
+        <hr>
+        <div id="bookListArea">
+            <div id="empty-state">
+                <h2>
+                    <strong>Oh no!</strong>
+                </h2> 
+                <p>You don't have any books in your library! Add your first book using the form above.</p>
+            </div>
+            <ul id="bookList">
+
+            </ul>
+        </div>
+
+        <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    margin: auto;
+    color: #444444;
+}
+
+#form-inputs {
+    display: flex;
+    flex-direction: row;
+}
+
+#addBook {
+    background-color: white;
+    color: #357EC7;
+    border: 1px solid #357EC7;
+}
+
+.removeBook {
+    background-color: white;
+    color: gray;
+    border: 0px solid red;
+}
+
+.removeBook:hover {
+    background-color: white;
+    color: red;
+    border: 0px solid red;
+}
+
+.form-field {
+    margin-right: 10px;
+}
+
+#pages {
+    width: 3rem;
+}
+
+#empty-state{
+    color: #357EC7;
+}
+
+.display-none {
+    display: none;
+    color: red;
+}
